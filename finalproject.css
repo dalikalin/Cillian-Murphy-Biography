@@ -1,0 +1,254 @@
+body {
+  /* remove default white gap around the page */
+  margin: 0;
+}
+.navbar {
+  /* pins the bar to the top left of the screen even when scroll */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* makes that bar span the full screen */
+  width: 100%;
+  /* be able to arrange what's inside it */
+  display: flex;
+  /* puts the nav items in the middle horizontally */
+  justify-content: center;
+  /* centers the nav items vertically inside the bar */
+  align-items: center;
+
+  padding: 15px 40px;
+  box-sizing: border-box;
+  /* makes the bar half-transparent black */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* keeps the bar on top of everything else*/
+  z-index: 1000;
+}
+
+.navitems {
+  display: flex;
+  gap: 100px;
+}
+
+.navitems a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navitems a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  height: 100vh;
+  background: url("https://cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/C34GTS4EIZGS7NWP6NPOAFH5TE.jpg")
+    center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.biography {
+  display: flex;
+}
+.portrait {
+  width: 50%;
+  margin: 50px;
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.textontheright {
+  width: 50%;
+  color: #333333;
+}
+
+.title {
+  font-family: Georgia, serif;
+  font-size: 50px;
+  line-height: 1;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  color: #111111;
+}
+
+.textontheright p {
+  line-height: 1.6;
+  color: black;
+  margin-right: 50px;
+  font-size: 16px;
+}
+
+h1 {
+  color: white;
+  font-family: serif;
+  font-size: 125px;
+  line-height: 1;
+}
+
+.quotesection {
+  background-color: #000000;
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+.quote {
+  font-family: serif;
+  font-style: italic;
+  font-size: 40px;
+  max-width: 800px;
+  margin: 15px 0;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.author {
+  font-family: sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #3c3b3b;
+}
+table {
+  /* merges the double borders into single lines */
+  border-collapse: collapse;
+}
+th,
+td {
+  /* gives each cell a gray 3px border */
+  border: 3px solid #8e8e8e;
+  /* adds space inside each cell */
+  padding: 10px;
+}
+
+.hero2 {
+  height: 100vh;
+  background: url("https://vip-uploads.s3.amazonaws.com/uploads/2026/03/Cillian-Murphy_004_SAS_8419_xlQxihXw-scaled.jpg")
+    center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+/* Card Container Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 0 40px;
+  background-color: #0b0b0b;
+}
+
+/* Individual Card Frame */
+.card {
+  background-color: #1a1a1b;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Poster Image Container */
+.card-image-container {
+  width: 100%;
+  height: 380px;
+  background-color: #2a2a2b; 
+  overflow: hidden;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Bottom Content Area */
+.card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Title & Year Alignment */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.card-year {
+  font-family: monospace, sans-serif;
+  font-size: 0.9rem;
+  color: #6c6c6e;
+}
+
+/* Character Role Styling */
+.card-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #8e8e93;
+  text-transform: uppercase;
+}
+
+/* Paragraph Description */
+.card-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #7c7c80;
+}
+
+.family {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  /* Centers both text and image horizontally */
+  align-items: center;
+  /* Centers paragraph text lines */
+  text-align: center;
+  /* Adds clean spacing between text and image */
+  gap: 20px;
+}
+
+.family img {
+  /* Prevents large image from overflowing screen */
+  max-width: 100%;
+  height: auto;
+}
+.top20title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.awardlist {
+  /* Adjust this value based on how tall your navbar is */
+  padding-top: 50px; 
+}
+
+footer {
+  background-color: gray;
+  text-align: center;
+  font-size: 15px;
+  padding: 1px;
+  margin-top: 0px;
+}
